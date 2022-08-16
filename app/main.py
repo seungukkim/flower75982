@@ -75,7 +75,7 @@ def recommend():
             "outputs": [
                 {
                     "simpleText": {
-                        "text": "검색된 장학금은 총 : 개 입니다."
+                        "text": "검색된 장학금은 총 : {}개 입니다.".format(len1)
                     }
                 },
                 {
