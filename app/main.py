@@ -63,13 +63,13 @@ def recommend():
     special1 = "\'%%" + special + "%%\'"
     location1 = "\'%%" + location + "%%\'"
     list1=start.db_select(advantage1,job1,age,location1,special1)
+    len1=len(list1)
+    print(len1)
     print(list1)
     list2=list1[0]
     print(list2)
     print(type(list2))
-    # list3=list2[2:-3]
-    len1=len(list1)
-    print(len1)
+    
     if len1 >= 5:
         responseBody = {
             "version": "2.0",
