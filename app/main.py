@@ -204,7 +204,7 @@ def recommend():
 
         return responseBody
 
-    else :
+    else:
         responseBody = {
         "version": "2.0",
         "template": {
