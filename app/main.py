@@ -239,7 +239,7 @@ def recommen2d():
                     "title": list1[5][2:-62],
                     "description": "장학금 추천",
                     "thumbnail": {
-                        "imageUrl": "https://github.com/seungukkim/herokucombinechat79/blob/main/image/a.png?raw=true"
+                        "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%881.jpg?raw=true"
                     },
                     "buttons": [
                         {
@@ -262,7 +262,7 @@ def recommen2d():
                     "title": list1[6][2:-62],
                     "description": "장학금 추천",
                     "thumbnail": {
-                        "imageUrl": "https://github.com/seungukkim/herokucombinechat79/blob/main/image/b.png?raw=true"
+                        "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%882.jpg?raw=true"
                     },
                     "buttons": [
                         {
@@ -282,7 +282,7 @@ def recommen2d():
                     "title": list1[7][2:-62],
                     "description": "장학금 추천",
                     "thumbnail": {
-                        "imageUrl": "https://github.com/seungukkim/herokucombinechat79/blob/main/image/c.png?raw=true"
+                        "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%883.jpg?raw=true"
                     },
                     "buttons": [
                          {
@@ -301,7 +301,7 @@ def recommen2d():
                     "title": list1[8][2:-62],
                     "description": "장학금 추천",
                     "thumbnail": {
-                        "imageUrl": "https://github.com/seungukkim/herokucombinechat79/blob/main/image/b.png?raw=true"
+                        "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%884.jpg?raw=true"
                     },
                     "buttons": [
                         {
@@ -321,7 +321,7 @@ def recommen2d():
                     "title": list1[9][2:-62],
                     "description": "장학금 추천",
                     "thumbnail": {
-                        "imageUrl": "https://github.com/seungukkim/herokucombinechat79/blob/main/image/b.png?raw=true"
+                        "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%885.jpg?raw=true"
                     },
                     "buttons": [
                         {
