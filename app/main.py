@@ -50,14 +50,14 @@ def whereLive():
     location=params_df['location']
     print(location)
 
-    position=params_df['position']
-    [print(position)]
-
     advantage=params_df['advantage']
     print(advantage)
     print(type(advantage))
     age=json.loads(params_df['sys_number'])['amount']
     print(age)
+
+    special = params_df['special']
+    print(special)
     advantage1="\'" + advantage +"\'"
     job1="\'%%" + job + "%%\'"
     list1=start.db_select(advantage1,job1)

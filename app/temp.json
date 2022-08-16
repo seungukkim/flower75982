@@ -1,0 +1,81 @@
+{
+    "bot":{
+       "id":"62f2fac878a1fc2ba5b20730!",
+       "name":"꽃망울"
+    },
+    "intent":{
+       "id":"62faf65670055f434dcd24f1",
+       "name":"장학금추천1",
+       "extra":{
+          "reason":{
+             "code":1,
+             "message":"OK"
+          }
+       }
+    },
+    "action":{
+       "id":"62faf4b278a1fc2ba5b278f9",
+       "name":"장학금추천",
+       "params":{
+          "location":"부산",
+          "job":"대학생",
+          "advantage":"학비지원",
+          "special":" 기초수급자",
+          "sys_number":"{\"amount\": 21, \"unit\": null}"
+       },
+       "detailParams":{
+          "location":{
+             "groupName":"",
+             "origin":"부산",
+             "value":"부산"
+          },
+          "job":{
+             "groupName":"",
+             "origin":"대학생",
+             "value":"대학생"
+          },
+          "advantage":{
+             "groupName":"",
+             "origin":"학비지원",
+             "value":"학비지원"
+          },
+          "special":{
+             "groupName":"",
+             "origin":"기초수급자",
+             "value":"기초수급자"
+          },
+          "sys_number":{
+             "groupName":"",
+             "origin":"21",
+             "value":"{\"amount\": 21, \"unit\": null}"
+          }
+       },
+       "clientExtra":{
+          
+       }
+    },
+    "userRequest":{
+       "block":{
+          "id":"62faf65670055f434dcd24f1",
+          "name":"장학금추천1"
+       },
+       "user":{
+          "id":"387fe4143d28451b658ac88fcd94c639f321b38f544fe0029f4b38ab347bc44e08",
+          "type":"botUserKey",
+          "properties":{
+             "botUserKey":"387fe4143d28451b658ac88fcd94c639f321b38f544fe0029f4b38ab347bc44e08",
+             "bot_user_key":"387fe4143d28451b658ac88fcd94c639f321b38f544fe0029f4b38ab347bc44e08"
+          }
+       },
+       "utterance":"21 대학생 부산 기초수급자 학비지원",
+       "params":{
+          "surface":"BuilderBotTest",
+          "ignoreMe":"true"
+       },
+       "lang":"kr",
+       "timezone":"Asia/Seoul"
+    },
+    "contexts":[
+       
+    ]
+ }
