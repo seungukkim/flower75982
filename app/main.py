@@ -207,6 +207,7 @@ def recommend():
 
         return responseBody
     else :
+        qwest=False
         responseBody = {
             "version": "2.0",
             "template": {
@@ -217,6 +218,7 @@ def recommend():
                             "text": "검색된 장학금은 총 : {}개 입니다".format(len1)
                         }
                     },
+                    
                     {
                     "carousel": {
                     "type": "basicCard",
@@ -240,10 +242,10 @@ def recommend():
                             }
                         
                         ]
-                    
+                        
 
                         },
-
+                            
                         {
                         "title": list1[1][2:-62],
                         "description": "장학금 추천",
@@ -294,6 +296,26 @@ def recommend():
                             "action":  "webLink",
                             "label": "구경하기",
                             "webLinkUrl": list1[3][-58:-2]
+                            },
+
+                            {
+                            "action": "share",
+                            "label": "공유하기"                      
+                            }
+                        
+                        ]
+                        },
+                        {
+                        "title": list1[4][2:-62],
+                        "description": "장학금 추천",
+                        "thumbnail": {
+                            "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%885.jpg?raw=true"
+                        },
+                        "buttons": [
+                            {
+                            "action":  "webLink",
+                            "label": "구경하기",
+                            "webLinkUrl": list1[4][-58:-2]
                             },
 
                             {
