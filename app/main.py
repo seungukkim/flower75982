@@ -77,7 +77,8 @@ def recommend():
                 "outputs": [
                     {
                         "simpleText": {
-                            "text": "검색된 장학금은 총 : {}개 입니다.".format(len1)
+                            
+                            "text": "검색된 장학금은 총 : {}개 입니다".format(len1)
                         }
                     },
                     {
@@ -202,21 +203,27 @@ def recommend():
         }
 
         return responseBody
+
     else :
         responseBody = {
-            "version": "2.0",
-            "template": {
-                "outputs": [
-                    {
-                        "simpleText": {
-                            "text": "5개보다 적으니까 안 알랴쥼"
-                        }
+        "version": "2.0",
+        "template": {
+            "outputs": [
+                {
+                    "simpleText": {
+                        "text": "배고프다"
                     }
-                ]
-            }
+                }
+            ]
+        }
         }
 
         return responseBody
+       
+        
+
+    
+        
 
   
 # 장학금 추가로 받아오기 
