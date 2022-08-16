@@ -26,28 +26,29 @@ def db_create():
     data.to_sql(name='dreamspon', con=engine, schema = 'public', if_exists='replace', index=False)
 
 
-def db_select(choice,choice1):
+def db_select(choice,choice1,choice2,choice3,choice4):
     list=[]
-    # choice="\'생활비지원'"
+    # choice="\'%%생활비지원%%'"
     # choice1="\'%%대학생%%'"
-    result= engine.execute("SELECT name,url FROM dreamspon WHERE advantage LIKE {0} AND who like {1} ".format(choice,choice1))
-    # result= engine.execute("SELECT name FROM dreamspon WHERE advantage LIKE '생활비지원'")
-    
+    # choice2=25
+    # choice3="\'%%서울%%'"
+    # choice4="\'%%기초수급자%%'"
+    result= engine.execute("SELECT name,url FROM dreamspon WHERE advantage LIKE {0} AND who like {1} AND (age IS null OR age < {2}) AND (where1 IS null or where1 LIKE {3}) AND (qualification IS null or qualification LIKE {4})".format(choice,choice1,choice2,choice3,choice4))
+     
     for r in result: 
         list.append(str(r))
-        
-             
-        
+
+    print(list[0])        
     print(list[1])
     print(list[2])
+    print(list[3])
     return list
 
 def db_select1():
-    # list=[]
+    list=[]
     # choice="\'생활비지원'"
     # result= engine.execute("SELECT name,url FROM dreamspon WHERE who LIKE'%%대학생%%'")
-    result= engine.execute("SELECT name,url FROM dreamspon WHERE advantage LIKE '학비지원'")
-    # result= engine.execute("SELECT name FROM dreamspon WHERE advantage LIKE '생활비지원'")
+    result= engine.execute("SELECT name,url FROM dreamspon WHERE (age IS null OR age < 25) AND who LIKE '%%대학생%%' AND (where1 LIKE '%%서울%%' OR where1 IS null) AND (qualification LIKE '%%기초수급자%%' OR qualification IS null) AND advantage LIKE '%%학비지원%%'")
     
     for r in result: 
         print(r)
@@ -64,7 +65,7 @@ def index():
 
 
 if __name__ == "__main__":
-    db_create()
-    # db_select()
+    # db_create()
+    db_select()
     # db_select1()
     app.run()

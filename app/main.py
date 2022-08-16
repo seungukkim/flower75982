@@ -58,9 +58,11 @@ def whereLive():
 
     special = params_df['special']
     print(special)
-    advantage1="\'" + advantage +"\'"
+    advantage1="\'%%" + advantage + "%%\'"
     job1="\'%%" + job + "%%\'"
-    list1=start.db_select(advantage1,job1)
+    special1 = "\'%%" + special + "%%\'"
+    location1 = "\'%%" + location + "%%\'"
+    list1=start.db_select(advantage1,job1,age,location1,special1)
     print(list1)
     list2=list1[0]
     print(list2)
