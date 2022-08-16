@@ -69,8 +69,8 @@ def recommend():
     print(type(list2))
     # list3=list2[2:-3]
     len1=len(list1)
-    
-    if len1 > 5:
+    print(len1)
+    if len1 >= 5:
         responseBody = {
             "version": "2.0",
             "template": {
@@ -203,7 +203,7 @@ def recommend():
         }
 
         return responseBody
-    else:
+    else :
         responseBody = {
             "version": "2.0",
             "template": {
