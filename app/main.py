@@ -207,17 +207,42 @@ def recommend():
         for i in range(len1):
             result=list1[i][2:-62]
         responseBody = {
-            "version": "2.0",
-            "template": {
-                "outputs": [
-                    {
-                        "simpleText": {
-                            "text": result
-                        }
-                    }
-                ]
+  "version": "2.0",
+  "template": {
+    "outputs": [
+      {
+        "basicCard": {
+          "title": result,
+          "description": result,
+          "thumbnail": {
+            "imageUrl": "https://t1.kakaocdn.net/openbuilder/sample/lj3JUcmrzC53YIjNDkqbWK.jpg"
+          },
+          "profile": {
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4BJ9LU4Ikr_EvZLmijfcjzQKMRCJ2bO3A8SVKNuQ78zu2KOqM",
+            "nickname": result
+          },
+          "social": {
+            "like": 1238,
+            "comment": 8,
+            "share": 780
+          },
+          "buttons": [
+            {
+              "action": "message",
+              "label": "열어보기",
+              "messageText": "짜잔! 우리가 찾던 보물입니다"
+            },
+            {
+              "action":  "webLink",
+              "label": "구경하기",
+              "webLinkUrl": "https://e.kakao.com/t/hello-ryan"
             }
+          ]
         }
+      }
+    ]
+  }
+}
 
         return responseBody
        
