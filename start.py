@@ -42,6 +42,7 @@ def db_select(choice,choice1,choice2,choice3,choice4):
     print(list[1])
     print(list[2])
     print(list[3])
+    print("총 개수는 :{}개 입니다.".format(len(list)))
     return list
 
 def db_select1():
