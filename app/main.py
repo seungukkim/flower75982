@@ -211,17 +211,22 @@ def recommen2d():
     location=params_df['location1']
     print(location)
 
-    position=params_df['position1']
-    [print(position)]
-
     advantage=params_df['advantage1']
     print(advantage)
     print(type(advantage))
     age=json.loads(params_df['sys_number1'])['amount']
     print(age)
-    advantage1="\'" + advantage +"\'"
+
+    special=params_df['special1']
+    [print(special)]
+
+    
+    advantage1="\'%%" + advantage + "%%\'"
     job1="\'%%" + job + "%%\'"
-    list1=start.db_select(advantage1,job1)
+    special1 = "\'%%" + special + "%%\'"
+    location1 = "\'%%" + location + "%%\'"
+
+    list1=start.db_select(advantage1,job1,age,location1,special1)
     responseBody = {
         "version": "2.0",
         "template": {
