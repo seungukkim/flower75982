@@ -68,10 +68,16 @@ def recommend():
     print(list2)
     print(type(list2))
     # list3=list2[2:-3]
+    len1=len(list1)
     responseBody = {
         "version": "2.0",
         "template": {
             "outputs": [
+                {
+                    "simpleText": {
+                        "text": "검색된 장학금은 총 : 개 입니다."
+                    }
+                },
                 {
                 "carousel": {
                 "type": "basicCard",
