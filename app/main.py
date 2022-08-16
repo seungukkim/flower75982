@@ -206,22 +206,22 @@ def recommend():
     else :
         for i in range(len1):
             result=list1[i][2:-62]
-        responseBody = {
-            "version": "2.0",
-            "template": {
-                "outputs": [
-                {
-                    "basicCard": {
-                    "title": result,
-                    "description": result,
+            responseBody = {
+                "version": "2.0",
+                "template": {
+                    "outputs": [
+                    {
+                        "basicCard": {
+                        "title": result,
+                        "description": result,
                     
+                        }
                     }
+                    ]   
                 }
-                ]   
-            }
-            }
+                }
 
-        return responseBody
+            return responseBody
        
         
 
