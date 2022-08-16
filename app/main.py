@@ -36,7 +36,7 @@ def sayHello():
 
 # 카카오톡 장학금 받아오기
 @app.route('/api/recommend', methods=['POST'])
-def whereLive():
+def recommend():
     body = request.get_json()
     print(body)
 
@@ -195,8 +195,9 @@ def whereLive():
 
     return responseBody
   
-@app.route('/api/where2Live', methods=['POST'])
-def where2Live():
+# 장학금 추가로 받아오기 
+@app.route('/api/recommen2d', methods=['POST'])
+def recommen2d():
     body = request.get_json()
     print(body)
 
