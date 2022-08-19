@@ -499,8 +499,3 @@ def recommen2d():
     }
 
     return responseBody
-    
-@app.route('/api/order_confirm', methods=['POST'])
-def order_confirm():
-    body = request.get_json()
-    print(body)
