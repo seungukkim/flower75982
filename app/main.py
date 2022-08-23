@@ -374,128 +374,67 @@ def recommen2d():
 
     list1=start.db_select(advantage1,job1,age,location1,special1)
     responseBody = {
-        "version": "2.0",
-        "template": {
-            "outputs": [
-                {
-                "carousel": {
-                "type": "basicCard",
-                "items": [
-                    {
-                    "title": list1[5][2:-62],
-                    "description": "장학금 추천",
-                    "thumbnail": {
-                        "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%881.jpg?raw=true"
-                    },
-                    "buttons": [
-                        {
-                        "action":"webLink",
-                        "label": "구경하기",
-                        "webLinkUrl": list1[5][-58:-2]
-                        },
-                        {
-                        "action": "share",
-                         "label": "공유하기"
-                        
-                        }
-                        
-                    ]
-                    
-
-                    },
-
-                    {
-                    "title": list1[6][2:-62],
-                    "description": "장학금 추천",
-                    "thumbnail": {
-                        "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%882.jpg?raw=true"
-                    },
-                    "buttons": [
-                        {
-                        "action":  "webLink",
-                        "label": "구경하기",
-                        "webLinkUrl": list1[6][-58:-2]
-                        },
-
-                        {
-                        "action": "share",
-                        "label": "공유하기"                      
-                        }
-                        
-                    ]
-                    },
-                    {
-                    "title": list1[7][2:-62],
-                    "description": "장학금 추천",
-                    "thumbnail": {
-                        "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%883.jpg?raw=true"
-                    },
-                    "buttons": [
-                         {
-                        "action": "webLink",
-                        "label": "구경하기",
-                        "webLinkUrl": list1[7][-58:-2]
-                        },
-                        {
-                        "action": "share",
-                        "label": "공유하기"
-                        }
-                       
-                    ]
-                    },
-                    {
-                    "title": list1[8][2:-62],
-                    "description": "장학금 추천",
-                    "thumbnail": {
-                        "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%884.jpg?raw=true"
-                    },
-                    "buttons": [
-                        {
-                        "action":  "webLink",
-                        "label": "구경하기",
-                        "webLinkUrl": list1[8][-58:-2]
-                        },
-
-                        {
-                        "action": "share",
-                        "label": "공유하기"                      
-                        }
-                        
-                    ]
-                    },
-                    {
-                    "title": list1[9][2:-62],
-                    "description": "장학금 추천",
-                    "thumbnail": {
-                        "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%885.jpg?raw=true"
-                    },
-                    "buttons": [
-                        {
-                        "action":  "webLink",
-                        "label": "구경하기",
-                        "webLinkUrl": list1[9][-58:-2]
-                        },
-
-                        {
-                        "action": "share",
-                        "label": "공유하기"                      
-                        }
-                        
-                    ]
-                    }
-                ]
-                }
-             }
-            ],
-            "quickReplies": [
+  "version": "2.0",
+  "template": {
+    "outputs": [
+      {
+        "carousel": {
+          "type": "listCard",
+          "items": [
             {
-                "messageText": "추가 장학금1",
-                "action": "message",
-                "label": "장학금 더보기"
+              "header": {
+                "title": "장학금 더보기"
+              },
+              "items": [
+                {
+                  "title": list1[5][2:-62],
+                  "description": "글쎄",
+                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_01.jpg",
+                  "action":"webLink",
+                  "webLinkUrl": list1[5][-58:-2]
+                },
+                {
+                  "title": list1[6][2:-62],
+                  "description": "글쎄",
+                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_01.jpg",
+                  "action":"webLink",
+                  "webLinkUrl": list1[6][-58:-2]
+                },
+                {
+                  "title": list1[7][2:-62],
+                  "description": "글쎄",
+                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_01.jpg",
+                  "action":"webLink",
+                  "webLinkUrl": list1[7][-58:-2]
+                },
+                {
+                  "title": list1[8][2:-62],
+                  "description": "글쎄",
+                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_01.jpg",
+                  "action":"webLink",
+                  "webLinkUrl": list1[8][-58:-2]
+                },
+                {
+                  "title": list1[9][2:-62],
+                  "description": "글쎄",
+                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_01.jpg",
+                  "action":"webLink",
+                  "webLinkUrl": list1[9][-58:-2]
+                }
+              ],
+              "buttons": [
+                {
+                  "label": "더보기",
+                  "action": "message",
+                  "messageText" : "더보기1"
+                }
+              ]
             }
-            
-            ]
+          ]
         }
-    }
+      }
+    ]
+  }
+}
 
     return responseBody
