@@ -206,123 +206,36 @@ def recommend():
         }
 
         return responseBody
-    else :
-        qwest=False
+    elif len1==1 :
         responseBody = {
             "version": "2.0",
             "template": {
                 "outputs": [
                     {
                         "simpleText": {
-                            
-                            "text": "검색된 장학금은 총 : {}개 입니다".format(len1)
+                        "text": "검색된 장학금은 총 : {}개 입니다".format(len1)
                         }
                     },
-                    
                     {
                     "carousel": {
                     "type": "basicCard",
                     "items": [
                         {
-                        "title": list1[0][2:-62],
+                        "title": list1[0][2:-139],
                         "description": "장학금 추천",
                         "thumbnail": {
-                            "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%881.jpg?raw=true"
+                            "imageUrl": list1[0][-75:-2]
                         },
                         "buttons": [
                             {
                             "action":"webLink",
                             "label": "구경하기",
-                            "webLinkUrl": list1[0][-58:-2]
+                            "webLinkUrl": list1[0][-135:-79]
                             },
                             {
                             "action": "share",
-                            "label": "공유하기"
-                        
-                            }
-                        
-                        ]
-                        
-
-                        },
-                            
-                        {
-                        "title": list1[1][2:-62],
-                        "description": "장학금 추천",
-                        "thumbnail": {
-                            "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%882.jpg?raw=true"
-                        },
-                        "buttons": [
-                            {
-                            "action":  "webLink",
-                            "label": "구경하기",
-                            "webLinkUrl": list1[1][-58:-2]
-                            },
-
-                            {
-                            "action": "share",
-                            "label": "공유하기"                      
-                            }
-                        
-                        ]
-                        },
-                        {
-                        "title": list1[2][2:-62],
-                        "description": "장학금 추천",
-                        "thumbnail": {
-                            "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%883.jpg?raw=true"
-                        },
-                        "buttons": [
-                            {
-                            "action": "webLink",
-                            "label": "구경하기",
-                            "webLinkUrl": list1[2][-58:-2]
-                            },
-                            {
-                            "action": "share",
-                            "label": "공유하기"
-                            }
-                       
-                        ]
-                        },
-                        {
-                        "title": list1[3][2:-62],
-                        "description": "장학금 추천",
-                        "thumbnail": {
-                            "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%884.jpg?raw=true"
-                        },
-                        "buttons": [
-                            {
-                            "action":  "webLink",
-                            "label": "구경하기",
-                            "webLinkUrl": list1[3][-58:-2]
-                            },
-
-                            {
-                            "action": "share",
-                            "label": "공유하기"                      
-                            }
-                        
-                        ]
-                        },
-                        {
-                        "title": list1[4][2:-62],
-                        "description": "장학금 추천",
-                        "thumbnail": {
-                            "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%885.jpg?raw=true"
-                        },
-                        "buttons": [
-                            {
-                            "action":  "webLink",
-                            "label": "구경하기",
-                            "webLinkUrl": list1[4][-58:-2]
-                            },
-
-                            {
-                            "action": "share",
-                            "label": "공유하기"                      
-                            }
-                        
+                            "label": "공유하기"                    
+                            }                       
                         ]
                         }
                     ]
@@ -331,7 +244,234 @@ def recommend():
                 ]
             }
         }
+        return responseBody
 
+    elif len1==2 :
+        responseBody = {
+            "version": "2.0",
+            "template": {
+                "outputs": [
+                    {
+                        "simpleText": {
+                        "text": "검색된 장학금은 총 : {}개 입니다".format(len1)
+                        }
+                    },
+                    {
+                    "carousel": {
+                    "type": "basicCard",
+                    "items": [
+                        {
+                        "title": list1[0][2:-139],
+                        "description": "장학금 추천",
+                        "thumbnail": {
+                            "imageUrl": list1[0][-75:-2]
+                        },
+                        "buttons": [
+                            {
+                            "action":"webLink",
+                            "label": "구경하기",
+                            "webLinkUrl": list1[0][-135:-79]
+                            },
+                            {
+                            "action": "share",
+                            "label": "공유하기"                    
+                            }                       
+                        ]
+                        },
+                        {
+                        "title": list1[1][2:-139],
+                        "description": "장학금 추천",
+                        "thumbnail": {
+                            "imageUrl": list1[1][-75:-2]
+                        },
+                        "buttons": [
+                            {
+                            "action":"webLink",
+                            "label": "구경하기",
+                            "webLinkUrl": list1[1][-135:-79]
+                            },
+                            {
+                            "action": "share",
+                            "label": "공유하기"                    
+                            }                       
+                        ]
+                        }
+                    ]
+                    }
+                }
+                ]
+            }
+        }
+        return responseBody
+    
+    elif len1==3 :
+        responseBody = {
+            "version": "2.0",
+            "template": {
+                "outputs": [
+                    {
+                        "simpleText": {
+                        "text": "검색된 장학금은 총 : {}개 입니다".format(len1)
+                        }
+                    },
+                    {
+                    "carousel": {
+                    "type": "basicCard",
+                    "items": [
+                        {
+                        "title": list1[0][2:-139],
+                        "description": "장학금 추천",
+                        "thumbnail": {
+                            "imageUrl": list1[0][-75:-2]
+                        },
+                        "buttons": [
+                            {
+                            "action":"webLink",
+                            "label": "구경하기",
+                            "webLinkUrl": list1[0][-135:-79]
+                            },
+                            {
+                            "action": "share",
+                            "label": "공유하기"                    
+                            }                       
+                        ]
+                        },
+                        {
+                        "title": list1[1][2:-139],
+                        "description": "장학금 추천",
+                        "thumbnail": {
+                            "imageUrl": list1[1][-75:-2]
+                        },
+                        "buttons": [
+                            {
+                            "action":"webLink",
+                            "label": "구경하기",
+                            "webLinkUrl": list1[1][-135:-79]
+                            },
+                            {
+                            "action": "share",
+                            "label": "공유하기"                    
+                            }                       
+                        ]
+                        },
+                        {
+                        "title": list1[2][2:-139],
+                        "description": "장학금 추천",
+                        "thumbnail": {
+                            "imageUrl": list1[2][-75:-2]
+                        },
+                        "buttons": [
+                            {
+                            "action":"webLink",
+                            "label": "구경하기",
+                            "webLinkUrl": list1[2][-135:-79]
+                            },
+                            {
+                            "action": "share",
+                            "label": "공유하기"                    
+                            }                       
+                        ]
+                        }
+                    ]
+                    }
+                }
+                ]
+            }
+        }
+        return responseBody
+    
+    elif len1==4 :
+        responseBody = {
+            "version": "2.0",
+            "template": {
+                "outputs": [
+                    {
+                        "simpleText": {
+                        "text": "검색된 장학금은 총 : {}개 입니다".format(len1)
+                        }
+                    },
+                    {
+                    "carousel": {
+                    "type": "basicCard",
+                    "items": [
+                        {
+                        "title": list1[0][2:-139],
+                        "description": "장학금 추천",
+                        "thumbnail": {
+                            "imageUrl": list1[0][-75:-2]
+                        },
+                        "buttons": [
+                            {
+                            "action":"webLink",
+                            "label": "구경하기",
+                            "webLinkUrl": list1[0][-135:-79]
+                            },
+                            {
+                            "action": "share",
+                            "label": "공유하기"                    
+                            }                       
+                        ]
+                        },
+                        {
+                        "title": list1[1][2:-139],
+                        "description": "장학금 추천",
+                        "thumbnail": {
+                            "imageUrl": list1[1][-75:-2]
+                        },
+                        "buttons": [
+                            {
+                            "action":"webLink",
+                            "label": "구경하기",
+                            "webLinkUrl": list1[1][-135:-79]
+                            },
+                            {
+                            "action": "share",
+                            "label": "공유하기"                    
+                            }                       
+                        ]
+                        },
+                        {
+                        "title": list1[2][2:-139],
+                        "description": "장학금 추천",
+                        "thumbnail": {
+                            "imageUrl": list1[2][-75:-2]
+                        },
+                        "buttons": [
+                            {
+                            "action":"webLink",
+                            "label": "구경하기",
+                            "webLinkUrl": list1[2][-135:-79]
+                            },
+                            {
+                            "action": "share",
+                            "label": "공유하기"                    
+                            }                       
+                        ]
+                        },
+                        {
+                        "title": list1[3][2:-139],
+                        "description": "장학금 추천",
+                        "thumbnail": {
+                            "imageUrl": list1[3][-75:-2]
+                        },
+                        "buttons": [
+                            {
+                            "action":"webLink",
+                            "label": "구경하기",
+                            "webLinkUrl": list1[3][-135:-79]
+                            },
+                            {
+                            "action": "share",
+                            "label": "공유하기"                    
+                            }                       
+                        ]
+                        }
+                    ]
+                    }
+                }
+                ]
+            }
+        }
         return responseBody
         
         
