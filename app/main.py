@@ -528,41 +528,41 @@ def recommen2d():
                     "items": [
                         {
                         "title": list1[5][2:-139],
-                        "description": "글쎄",
+                        
                         "imageUrl": list1[5][-75:-2],
-                    "action":"webLink",
-                    "webLinkUrl": list1[5][-135:-79]
+                        "action":"webLink",
+                        "webLinkUrl": list1[5][-135:-79]
                         },
                         {
                         "title": list1[6][2:-139],
-                    "description": "글쎄",
+                        
                         "imageUrl": list1[6][-75:-2],
                         "action":"webLink",
                         "webLinkUrl": list1[6][-135:-79]
                         },
                         {
                         "title": list1[7][2:-139],
-                        "description": "글쎄",
+                        
                         "imageUrl": list1[7][-75:-2],
                         "action":"webLink",
                         "webLinkUrl": list1[7][-135:-79]
-                    },
+                        },
                         {
                         "title": list1[8][2:-139],
-                        "description": "글쎄",
+                        
                         "imageUrl": list1[8][-75:-2],
-                    "action":"webLink",
+                        "action":"webLink",
                         "webLinkUrl": list1[8][-135:-79]
                         },
                         {
                         "title": list1[9][2:-139],
-                        "description": "글쎄",
+                        
                         "imageUrl": list1[9][-75:-2],
                         "action":"webLink",
                         "webLinkUrl": list1[9][-135:-79]
                         }
-                    ],
-                    "buttons": [
+                        ],
+                        "buttons": [
                         {
                         "label": "더보기",
                         "action": "message",
