@@ -387,39 +387,39 @@ def recommen2d():
               },
               "items": [
                 {
-                  "title": list1[5][2:-62],
+                  "title": list1[5][2:-139],
                   "description": "글쎄",
-                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_01.jpg",
+                  "imageUrl": list1[5][-75:-2],
                   "action":"webLink",
-                  "webLinkUrl": list1[5][-58:-2]
+                  "webLinkUrl": list1[5][-135:-79]
                 },
                 {
-                  "title": list1[6][2:-62],
+                  "title": list1[6][2:-139],
                   "description": "글쎄",
-                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_01.jpg",
+                  "imageUrl": list1[6][-75:-2],
                   "action":"webLink",
-                  "webLinkUrl": list1[6][-58:-2]
+                  "webLinkUrl": list1[6][-135:-79]
                 },
                 {
-                  "title": list1[7][2:-62],
+                  "title": list1[7][2:-139],
                   "description": "글쎄",
-                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_01.jpg",
+                  "imageUrl": list1[7][-75:-2],
                   "action":"webLink",
-                  "webLinkUrl": list1[7][-58:-2]
+                  "webLinkUrl": list1[7][-135:-79]
                 },
                 {
-                  "title": list1[8][2:-62],
+                  "title": list1[8][2:-139],
                   "description": "글쎄",
-                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_01.jpg",
+                  "imageUrl": list1[8][-75:-2],
                   "action":"webLink",
-                  "webLinkUrl": list1[8][-58:-2]
+                  "webLinkUrl": list1[8][-135:-79]
                 },
                 {
-                  "title": list1[9][2:-62],
+                  "title": list1[9][2:-139],
                   "description": "글쎄",
-                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_01.jpg",
+                  "imageUrl": list1[9][-75:-2],
                   "action":"webLink",
-                  "webLinkUrl": list1[9][-58:-2]
+                  "webLinkUrl": list1[9][-135:-79]
                 }
               ],
               "buttons": [
