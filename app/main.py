@@ -374,67 +374,66 @@ def recommen2d():
 
     list1=start.db_select(advantage1,job1,age,location1,special1)
     responseBody = {
-  "version": "2.0",
-  "template": {
-    "outputs": [
-      {
-        "carousel": {
-          "type": "listCard",
-          "items": [
+        "version": "2.0",
+        "template": {
+            "outputs": [
             {
-              "header": {
-                "title": "장학금 더보기"
-              },
-              "items": [
-                {
-                  "title": list1[5][2:-139],
-                  "description": "글쎄",
-                  "imageUrl": list1[5][-75:-2],
-                  "action":"webLink",
-                  "webLinkUrl": list1[5][-135:-79]
-                },
-                {
-                  "title": list1[6][2:-139],
-                  "description": "글쎄",
-                  "imageUrl": list1[6][-75:-2],
-                  "action":"webLink",
-                  "webLinkUrl": list1[6][-135:-79]
-                },
-                {
-                  "title": list1[7][2:-139],
-                  "description": "글쎄",
-                  "imageUrl": list1[7][-75:-2],
-                  "action":"webLink",
-                  "webLinkUrl": list1[7][-135:-79]
-                },
-                {
-                  "title": list1[8][2:-139],
-                  "description": "글쎄",
-                  "imageUrl": list1[8][-75:-2],
-                  "action":"webLink",
-                  "webLinkUrl": list1[8][-135:-79]
-                },
-                {
-                  "title": list1[9][2:-139],
-                  "description": "글쎄",
-                  "imageUrl": list1[9][-75:-2],
-                  "action":"webLink",
-                  "webLinkUrl": list1[9][-135:-79]
+                "carousel": {
+                "type": "listCard",
+                "items": [
+                    {
+                    "header": {
+                        "title": "장학금 더보기"
+                    },
+                    "items": [
+                        {
+                        "title": list1[5][2:-139],
+                        "description": "글쎄",
+                        "imageUrl": list1[5][-75:-2],
+                    "action":"webLink",
+                    "webLinkUrl": list1[5][-135:-79]
+                        },
+                        {
+                        "title": list1[6][2:-139],
+                    "description": "글쎄",
+                        "imageUrl": list1[6][-75:-2],
+                        "action":"webLink",
+                        "webLinkUrl": list1[6][-135:-79]
+                        },
+                        {
+                        "title": list1[7][2:-139],
+                        "description": "글쎄",
+                        "imageUrl": list1[7][-75:-2],
+                        "action":"webLink",
+                        "webLinkUrl": list1[7][-135:-79]
+                    },
+                        {
+                        "title": list1[8][2:-139],
+                        "description": "글쎄",
+                        "imageUrl": list1[8][-75:-2],
+                    "action":"webLink",
+                        "webLinkUrl": list1[8][-135:-79]
+                        },
+                        {
+                        "title": list1[9][2:-139],
+                        "description": "글쎄",
+                        "imageUrl": list1[9][-75:-2],
+                        "action":"webLink",
+                        "webLinkUrl": list1[9][-135:-79]
+                        }
+                    ],
+                    "buttons": [
+                        {
+                        "label": "더보기",
+                        "action": "message",
+                        "messageText" : "더보기1"
+                        }
+                    ]
+                    }
+                ]
                 }
-              ],
-              "buttons": [
-                {
-                  "label": "더보기",
-                  "action": "message",
-                  "messageText" : "더보기1"
-                }
-              ]
             }
-          ]
+            ]
         }
-      }
-    ]
-  }
-}
-
+        }
     return responseBody
