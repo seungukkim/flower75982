@@ -18,7 +18,8 @@ def db_create():
             age int NOT NULL,
             where1 VARCHAR(30) NOT NULL,
             qualification VARCHAR(30) NOT NULL,
-            url VARCHAR(70) NOT NULL
+            url VARCHAR(70) NOT NULL,
+            image VARCHAR(100) NOT NULL
         );"""
     )
     data = pd.read_csv('data/dreamspon.csv')
