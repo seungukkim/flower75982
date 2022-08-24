@@ -45,7 +45,7 @@ def db_select1():
     list=[]
     # choice="\'생활비지원'"
     # result= engine.execute("SELECT name,url FROM dreamspon WHERE who LIKE'%%대학생%%'")
-    result= engine.execute("SELECT name,url FROM dreamspon WHERE (age IS null OR age < 25) AND who LIKE '%%대학생%%' AND (where1 LIKE '%%서울%%' OR where1 IS null) AND (qualification LIKE '%%기초수급자%%' OR qualification IS null) AND advantage LIKE '%%학비지원%%'")
+    result= engine.execute("SELECT name,url,image FROM dreamspon WHERE (age IS null OR age < 25) AND who LIKE '%%대학생%%' AND (where1 LIKE '%%서울%%' OR where1 IS null) AND (qualification LIKE '%%기초수급자%%' OR qualification IS null) AND advantage LIKE '%%학비지원%%'")
     
     for r in result: 
         print(r)
