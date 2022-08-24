@@ -89,16 +89,16 @@ def recommend():
                     "type": "basicCard",
                     "items": [
                         {
-                        "title": list1[0][2:-62],
+                        "title": list1[0][2:-139],
                         "description": "장학금 추천",
                         "thumbnail": {
-                            "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%881.jpg?raw=true"
+                            "imageUrl": list1[0][-75:-2]
                         },
                         "buttons": [
                             {
                             "action":"webLink",
                             "label": "구경하기",
-                            "webLinkUrl": list1[0][-58:-2]
+                            "webLinkUrl": list1[0][-135:-79]
                             },
                             {
                             "action": "share",
@@ -112,16 +112,16 @@ def recommend():
                         },
 
                         {
-                        "title": list1[1][2:-62],
+                        "title": list1[1][2:-139],
                         "description": "장학금 추천",
                         "thumbnail": {
-                            "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%882.jpg?raw=true"
+                            "imageUrl": list1[1][-75:-2]
                         },
                         "buttons": [
                             {
                             "action":  "webLink",
                             "label": "구경하기",
-                            "webLinkUrl": list1[1][-58:-2]
+                            "webLinkUrl": list1[1][-135:-79]
                             },
 
                             {
@@ -132,16 +132,16 @@ def recommend():
                         ]
                         },
                         {
-                        "title": list1[2][2:-62],
+                        "title": list1[2][2:-139],
                         "description": "장학금 추천",
                         "thumbnail": {
-                            "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%883.jpg?raw=true"
+                            "imageUrl": list1[2][-75:-2]
                         },
                         "buttons": [
                             {
                             "action": "webLink",
                             "label": "구경하기",
-                            "webLinkUrl": list1[2][-58:-2]
+                            "webLinkUrl": list1[2][-135:-79]
                             },
                             {
                             "action": "share",
@@ -151,16 +151,16 @@ def recommend():
                         ]
                         },
                         {
-                        "title": list1[3][2:-62],
+                        "title": list1[3][2:-139],
                         "description": "장학금 추천",
                         "thumbnail": {
-                            "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%884.jpg?raw=true"
+                            "imageUrl": list1[3][-75:-2]
                         },
                         "buttons": [
                             {
                             "action":  "webLink",
                             "label": "구경하기",
-                            "webLinkUrl": list1[3][-58:-2]
+                            "webLinkUrl": list1[3][-135:-79]
                             },
 
                             {
@@ -171,16 +171,16 @@ def recommend():
                         ]
                         },
                         {
-                        "title": list1[4][2:-62],
+                        "title": list1[4][2:-139],
                         "description": "장학금 추천",
                         "thumbnail": {
-                            "imageUrl": "https://github.com/seungukkim/flower75982/blob/main/image/%EC%9E%A5%ED%95%99%EA%B8%885.jpg?raw=true"
+                            "imageUrl": list1[4][-75:-2]
                         },
                         "buttons": [
                             {
                             "action":  "webLink",
                             "label": "구경하기",
-                            "webLinkUrl": list1[4][-58:-2]
+                            "webLinkUrl": list1[4][-135:-79]
                             },
 
                             {
