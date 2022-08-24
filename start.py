@@ -34,7 +34,7 @@ def db_select(choice,choice1,choice2,choice3,choice4):
     # choice2=25
     # choice3="\'%%서울%%'"
     # choice4="\'%%기초수급자%%'"
-    result= engine.execute("SELECT name,url FROM dreamspon WHERE advantage LIKE {0} AND who like {1} AND (age IS null OR age < {2}) AND (where1 IS null or where1 LIKE {3}) AND (qualification IS null or qualification LIKE {4})".format(choice,choice1,choice2,choice3,choice4))
+    result= engine.execute("SELECT name,url,image FROM dreamspon WHERE advantage LIKE {0} AND who like {1} AND (age IS null OR age < {2}) AND (where1 IS null or where1 LIKE {3}) AND (qualification IS null or qualification LIKE {4})".format(choice,choice1,choice2,choice3,choice4))
      
     for r in result: 
         list.append(str(r))
