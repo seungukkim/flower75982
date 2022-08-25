@@ -530,27 +530,27 @@ def recommen2d():
                 {
                   "title": list1[5][2:-139],
                   "description": "4,500원",
-                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_01.jpg"
+                  "imageUrl": list1[5][-75:-2]
                 },
                 {
                   "title": list1[6][2:-139],
                   "description": "5,500원",
-                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_02.jpg"
+                  "imageUrl": list1[6][-75:-2]
                 },
                 {
                   "title": list1[7][2:-139],
                   "description": "5,300원",
-                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_03.jpg"
+                  "imageUrl": list1[7][-75:-2]
                 },
                 {
                   "title": list1[8][2:-139],
                   "description": "5,800원",
-                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_04.jpg"
+                  "imageUrl": list1[8][-75:-2]
                 },
                  {
                   "title": list1[9][2:-139],
                   "description": "5,800원",
-                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_04.jpg"
+                  "imageUrl": list1[9][-75:-2]
                 }
               ],
               "buttons": [
