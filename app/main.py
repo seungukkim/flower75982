@@ -532,7 +532,7 @@ def recommen2d():
 
 # 장학금 추가로 받아오기 
 @app.route('/api/recommen3d', methods=['POST'])
-def recommen2d():
+def recommen3d():
     body = request.get_json()
     print(body)
 
