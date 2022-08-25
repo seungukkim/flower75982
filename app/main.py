@@ -245,7 +245,29 @@ def recommend():
             }
         }
         return responseBody
-
+    elif len1==0:
+        responseBody = {
+                "version": "2.0",
+                "template": {
+                    "outputs": [
+                        {
+                            "basicCard": {
+                                "title": '죄송합니다. 해당되는 장학금이 없습니다.',
+                                "buttons": [
+                                    
+                                    {
+                                        "action": "block",
+                                        "label": "다시하기",
+                                        "blockId": "63045f97bda32f3914d2fc41"
+                                    }
+                                ]  
+                            },
+                        }
+                            
+                        ]
+                    }
+            }
+        return responseBody
     elif len1==2 :
         responseBody = {
             "version": "2.0",
