@@ -518,16 +518,67 @@ def recommen2d():
         "version": "2.0",
         "template": {
             "outputs": [
-                {
-                    "simpleText": {
-                        "text": "안녕 hello I'm Ryan"
+            {
+                "carousel": {
+                "type": "listCard",
+                "items": [
+                    {
+                    "header": {
+                        "title": "장학금 더보기"
+                    },
+                    "items": [
+                        {
+                        "title": list1[5][2:-139],
+                        
+                        "imageUrl": list1[5][-75:-2],
+                        "action":"webLink",
+                        "webLinkUrl": list1[5][-135:-79]
+                        },
+                        {
+                        "title": list1[6][2:-139],
+                        
+                        "imageUrl": list1[6][-75:-2],
+                        "action":"webLink",
+                        "webLinkUrl": list1[6][-135:-79]
+                        },
+                        {
+                        "title": list1[7][2:-139],
+                        
+                        "imageUrl": list1[7][-75:-2],
+                        "action":"webLink",
+                        "webLinkUrl": list1[7][-135:-79]
+                        },
+                        {
+                        "title": list1[8][2:-139],
+                        
+                        "imageUrl": list1[8][-75:-2],
+                        "action":"webLink",
+                        "webLinkUrl": list1[8][-135:-79]
+                        },
+                        {
+                        "title": list1[9][2:-139],
+                        
+                        "imageUrl": list1[9][-75:-2],
+                        "action":"webLink",
+                        "webLinkUrl": list1[9][-135:-79]
+                        }
+                        ],
+                        "buttons": [
+                        {
+                        "label": "더보기",
+                        "action": "message",
+                        "messageText" : "더보기1"
+                        }
+                    ]
                     }
+                ]
                 }
+            }
             ]
         }
-    }
-
+        }
     return responseBody
+
 
 
 # 장학금 추가로 받아오기 
