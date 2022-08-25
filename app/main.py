@@ -518,6 +518,55 @@ def recommen2d():
         "version": "2.0",
         "template": {
             "outputs": [
+                {
+                    "simpleText": {
+                        "text": "안녕 hello I'm Ryan"
+                    }
+                }
+            ]
+        }
+    }
+
+    return responseBody
+
+
+# 장학금 추가로 받아오기 
+@app.route('/api/recommen3d', methods=['POST'])
+def recommen2d():
+    body = request.get_json()
+    print(body)
+
+    params_df=body['action']['params']
+    print(params_df)
+    
+    job=params_df['job1']
+    print(job)
+    print(type(job))
+
+    location=params_df['location1']
+    print(location)
+
+    advantage=params_df['advantage1']
+    print(advantage)
+    print(type(advantage))
+    age=json.loads(params_df['sys_number1'])['amount']
+    print(age)
+
+    special=params_df['special1']
+    [print(special)]
+
+    
+    advantage1="\'%%" + advantage + "%%\'"
+    job1="\'%%" + job + "%%\'"
+    special1 = "\'%%" + special + "%%\'"
+    location1 = "\'%%" + location + "%%\'"
+
+    list1=start.db_select(advantage1,job1,age,location1,special1)
+    print(list1)
+    responseBody = {
+        "version": "2.0",
+        "template": {
+            "outputs": [
             {
                 "carousel": {
                 "type": "listCard",
