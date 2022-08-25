@@ -513,6 +513,7 @@ def recommen2d():
     location1 = "\'%%" + location + "%%\'"
 
     list1=start.db_select(advantage1,job1,age,location1,special1)
+    print(list1)
     responseBody = {
         "version": "2.0",
         "template": {
