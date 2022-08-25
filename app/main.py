@@ -515,68 +515,104 @@ def recommen2d():
     list1=start.db_select(advantage1,job1,age,location1,special1)
     print(list1)
     responseBody = {
-        "version": "2.0",
-        "template": {
-            "outputs": [
+  "version": "2.0",
+  "template": {
+    "outputs": [
+      {
+        "carousel": {
+          "type": "listCard",
+          "items": [
             {
-                "carousel": {
-                "type": "listCard",
-                "items": [
-                    {
-                    "header": {
-                        "title": "장학금 더보기"
-                    },
-                    "items": [
-                        {
-                        "title": list1[5][2:-139],
-                        
-                        "imageUrl": list1[5][-75:-2],
-                        "action":"webLink",
-                        "webLinkUrl": list1[5][-135:-79]
-                        },
-                        {
-                        "title": list1[6][2:-139],
-                        
-                        "imageUrl": list1[6][-75:-2],
-                        "action":"webLink",
-                        "webLinkUrl": list1[6][-135:-79]
-                        },
-                        {
-                        "title": list1[7][2:-139],
-                        
-                        "imageUrl": list1[7][-75:-2],
-                        "action":"webLink",
-                        "webLinkUrl": list1[7][-135:-79]
-                        },
-                        {
-                        "title": list1[8][2:-139],
-                        
-                        "imageUrl": list1[8][-75:-2],
-                        "action":"webLink",
-                        "webLinkUrl": list1[8][-135:-79]
-                        },
-                        {
-                        "title": list1[9][2:-139],
-                        
-                        "imageUrl": list1[9][-75:-2],
-                        "action":"webLink",
-                        "webLinkUrl": list1[9][-135:-79]
-                        }
-                        ],
-                        "buttons": [
-                        {
-                        "label": "더보기",
-                        "action": "message",
-                        "messageText" : "더보기1"
-                        }
-                    ]
-                    }
-                ]
+              "header": {
+                "title": "샌드위치"
+              },
+              "items": [
+                {
+                  "title": "햄치즈",
+                  "description": "4,500원",
+                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_01.jpg"
+                },
+                {
+                  "title": "베이컨 아보카도",
+                  "description": "5,500원",
+                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_02.jpg"
+                },
+                {
+                  "title": "에그 포테이토",
+                  "description": "5,300원",
+                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_03.jpg"
+                },
+                {
+                  "title": "갈릭 베이컨 토마토",
+                  "description": "5,800원",
+                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_04.jpg"
                 }
+              ],
+              "buttons": [
+                {
+                  "label": "더보기",
+                  "action": "message",
+                  "messageText" : "샌드위치 더보기"
+                }
+              ]
+            },
+            {
+              "header": {
+                "title": "커피"
+              },
+              "items": [
+                {
+                  "title": "아메리카노",
+                  "description": "1,800원",
+                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_05.jpg"
+                },
+                {
+                  "title": "카페라떼",
+                  "description": "2,000원",
+                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_06.jpg"
+                },
+                {
+                  "title": "카페모카",
+                  "description": "2,500원",
+                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_07.jpg"
+                },
+                {
+                  "title": "소이라떼",
+                  "description": "2,200원",
+                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_08.jpg"
+                }
+              ],
+              "buttons": [
+                {
+                  "label": "더보기",
+                  "action": "message",
+                  "messageText" : "커피 더보기"
+                }
+              ]
             }
-            ]
+          ]
         }
-        }
+      }
+    ],
+    "quickReplies": [
+      {
+        "messageText": "인기 메뉴",
+        "action": "message",
+        "label": "인기 메뉴"
+      },
+      {
+        "messageText": "최근 주문",
+        "action": "message",
+        "label": "최근 주문"
+      },
+      {
+        "messageText": "장바구니",
+        "action": "message",
+        "label": "장바구니"
+      }
+    ]
+  }
+}
     return responseBody
 
 
