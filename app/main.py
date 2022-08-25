@@ -529,38 +529,28 @@ def recommen2d():
               "items": [
                 {
                   "title": list1[5][2:-139],
-                  
-                  "imageUrl": list1[5][-75:-2],
-                  "action":"webLink",
-                  "webLinkUrl": list1[5][-135:-79]
+                  "description": "4,500원",
+                  "imageUrl": list1[5][-75:-2]
                 },
                 {
                   "title": list1[6][2:-139],
-                  
-                  "imageUrl": list1[6][-75:-2],
-                  "action":"webLink",
-                  "webLinkUrl": list1[5][-135:-79]
+                  "description": "5,500원",
+                  "imageUrl": list1[6][-75:-2]
                 },
                 {
                   "title": list1[7][2:-139],
-                  
-                  "imageUrl": list1[7][-75:-2],
-                  "action":"webLink",
-                  "webLinkUrl": list1[5][-135:-79]
+                  "description": "5,300원",
+                  "imageUrl": list1[7][-75:-2]
                 },
                 {
                   "title": list1[8][2:-139],
-                  
-                  "imageUrl": list1[8][-75:-2],
-                  "action":"webLink",
-                  "webLinkUrl": list1[5][-135:-79]
+                  "description": "5,800원",
+                  "imageUrl": list1[8][-75:-2]
                 },
                  {
                   "title": list1[9][2:-139],
-                  
-                  "imageUrl": list1[9][-75:-2],
-                  "action":"webLink",
-                  "webLinkUrl": list1[5][-135:-79]
+                  "description": "5,800원",
+                  "imageUrl": list1[9][-75:-2]
                 }
               ],
               "buttons": [
