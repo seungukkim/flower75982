@@ -261,11 +261,10 @@ def recommend():
                                         "blockId": "63045f97bda32f3914d2fc41"
                                     }
                                 ]  
-                            },
+                            }
                         }
-                            
                         ]
-                    }
+                  }
             }
         return responseBody
     elif len1==2 :
