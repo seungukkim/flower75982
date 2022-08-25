@@ -524,26 +524,31 @@ def recommen2d():
           "items": [
             {
               "header": {
-                "title": "샌드위치"
+                "title": "장학금 더보기"
               },
               "items": [
                 {
-                  "title": "햄치즈",
+                  "title": list1[5][2:-139],
                   "description": "4,500원",
                   "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_01.jpg"
                 },
                 {
-                  "title": "베이컨 아보카도",
+                  "title": list1[6][2:-139],
                   "description": "5,500원",
                   "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_02.jpg"
                 },
                 {
-                  "title": "에그 포테이토",
+                  "title": list1[7][2:-139],
                   "description": "5,300원",
                   "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_03.jpg"
                 },
                 {
-                  "title": "갈릭 베이컨 토마토",
+                  "title": list1[8][2:-139],
+                  "description": "5,800원",
+                  "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_04.jpg"
+                },
+                 {
+                  "title": list1[9][2:-139],
                   "description": "5,800원",
                   "imageUrl": "https://t1.kakaocdn.net/openbuilder/docs_image/02_img_04.jpg"
                 }
