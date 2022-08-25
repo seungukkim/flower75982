@@ -544,11 +544,25 @@ def recommen2d():
               "link": {
                 "web": list1[7][-135:-79]
               }
+            },
+            {
+              "title": list1[8][2:-139],
+              "imageUrl": list1[8][-75:-2],
+              "link": {
+                "web": list1[8][-135:-79]
+              }
+            },
+            {
+              "title": list1[9][2:-139],
+              "imageUrl": list1[9][-75:-2],
+              "link": {
+                "web": list1[9][-135:-79]
+              }
             }
           ],
           "buttons": [
             {
-              "label": "구경가기",
+              "label": "더보기",
               "action": "block",
               "blockId": "62654c249ac8ed78441532de",
               "extra": {
