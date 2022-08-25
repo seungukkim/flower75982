@@ -528,27 +528,21 @@ def recommen2d():
               "title": list1[5][2:-139],
               "imageUrl": list1[5][-75:-2],
               "link": {
-                "web": "https://namu.wiki/w/%EB%9D%BC%EC%9D%B4%EC%96%B8(%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%94%84%EB%A0%8C%EC%A6%88)"
+                "web": list1[5][-135:-79]
               }
             },
             {
               "title": list1[6][2:-139],
               "imageUrl": list1[6][-75:-2],
-              "action": "block",
-              "blockId": "62654c249ac8ed78441532de",
-              "extra": {
-                "key1": "value1",
-                "key2": "value2"
+              "link": {
+                "web": list1[6][-135:-79]
               }
             },
             {
               "title": list1[7][2:-139],
               "imageUrl": list1[7][-75:-2],
-              "action": "message",
-              "messageText": "Kakao i Voice Service",
-              "extra": {
-                "key1": "value1",
-                "key2": "value2"
+              "link": {
+                "web": list1[7][-135:-79]
               }
             }
           ],
