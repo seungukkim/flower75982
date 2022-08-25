@@ -519,47 +519,73 @@ def recommen2d():
   "template": {
     "outputs": [
       {
-        "carousel": {
-          "type": "listCard",
+        "listCard": {
+          "header": {
+            "장학금 더보기"
+          },
           "items": [
             {
-              "header": {
-                "title": "장학금 더보기"
-              },
-              "items": [
-                {
-                  "title": list1[5][2:-139],
-                  "description": "4,500원",
-                  "imageUrl": list1[5][-75:-2]
-                },
-                {
-                  "title": list1[6][2:-139],
-                  "description": "5,500원",
-                  "imageUrl": list1[6][-75:-2]
-                },
-                {
-                  "title": list1[7][2:-139],
-                  "description": "5,300원",
-                  "imageUrl": list1[7][-75:-2]
-                },
-                {
-                  "title": list1[8][2:-139],
-                  "description": "5,800원",
-                  "imageUrl": list1[8][-75:-2]
-                },
-                 {
-                  "title": list1[9][2:-139],
-                  "description": "5,800원",
-                  "imageUrl": list1[9][-75:-2]
-                }
-              ],
-              "buttons": [
-                {
-                  "label": "더보기",
-                  "action": "message",
-                  "messageText" : "샌드위치 더보기"
-                }
-              ]
+              "title": list1[5][2:-139],
+              "description": "새로운 AI의 내일과 일상의 변화",
+              "imageUrl": list1[5][-75:-2],
+              "link": {
+                "web": "https://namu.wiki/w/%EB%9D%BC%EC%9D%B4%EC%96%B8(%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%94%84%EB%A0%8C%EC%A6%88)"
+              }
+            },
+            {
+              "title": list1[6][2:-139],
+              "description": "카카오톡 채널 챗봇 만들기",
+              "imageUrl": list1[5][-75:-2],
+              "action": "block",
+              "blockId": "62654c249ac8ed78441532de",
+              "extra": {
+                "key1": "value1",
+                "key2": "value2"
+              }
+            },
+            {
+              "title": list1[7][2:-139],
+              "description": "보이스봇 / KVS 제휴 신청하기",
+              "imageUrl": list1[5][-75:-2],
+              "action": "message",
+              "messageText": "Kakao i Voice Service",
+              "extra": {
+                "key1": "value1",
+                "key2": "value2"
+              }
+            },
+            {
+              "title": list1[8][2:-139],
+              "description": "보이스봇 / KVS 제휴 신청하기",
+              "imageUrl": list1[5][-75:-2],
+              "action": "message",
+              "messageText": "Kakao i Voice Service",
+              "extra": {
+                "key1": "value1",
+                "key2": "value2"
+              }
+            },
+            {
+              "title": list1[9][2:-139],
+              "description": "보이스봇 / KVS 제휴 신청하기",
+              "imageUrl": list1[5][-75:-2],
+              "action": "message",
+              "messageText": "Kakao i Voice Service",
+              "extra": {
+                "key1": "value1",
+                "key2": "value2"
+              }
+            }
+          ],
+          "buttons": [
+            {
+              "label": "구경가기",
+              "action": "block",
+              "blockId": "62654c249ac8ed78441532de",
+              "extra": {
+                "key1": "value1",
+                "key2": "value2"
+              }
             }
           ]
         }
